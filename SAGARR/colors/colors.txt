@@ -1,0 +1,9 @@
+----lime green   #0C9BAE
+
+---- violet/purrple  #804AF2
+
+------PARAGRAPH  #5A5858
+
+-------heading   #2E2C2C
+
+--------bg color #FAF6F6

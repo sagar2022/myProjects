@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1,h2,h3,h4,h5{
+    color: var(--heading);
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+p{
+    color: var(--paragraph);
+}
+:root{
+    --bgColor: #FAF6F6;
+    --paragraph: #5A5858;
+    --heading: #2E2C2C;
+    --button: linear-gradient(to right, #0C9BAE , #804AF2);
+}
+
+body{
+  background-color: var(--bgColor);
+}
+
+/*.........-----------..header section......-----
+----------------------....*/
+
+header{
+  padding-top: 1rem;
+  padding: 0 7rem;
+  width: 100%;
+}
+
+header nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10rem;
+}
+
+.logo a img{
+  width: 11rem;
+}
+
+header nav .nav-section{
+    height: inherit;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+header nav .nav-section a{
+  font-size: 1.1rem;
+  padding:0 2rem;
+  color: var(--paragraph);
+}
+
+header nav .nav-section a:hover{
+    color: #804AF2;
+}
+
+/*.....-----------------..,..body section..---------------
+-------------------....*/
+
+.main-content{
+    width: 90%;
+    margin-left: 7rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.left-content{
+    width: 50%;
+}
+
+.left-content img{
+    width: 37rem;
+    position: absolute;
+    left: 0;
+    top: 12.5rem;
+    z-index: -1;
+}
+
+.left-content .line{
+    width: 26rem;
+    position: absolute;
+    top: 19.2rem;
+    left: 18rem;
+}
+
+.left-content h3{
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 4rem;
+}
+
+.left-content h2{
+    font-weight: 600;
+    font-size: 4.5rem;
+    line-height: 5rem;
+    overflow: hidden;
+    border-right: .5rem solid #804AF2;
+    white-space: nowrap;
+    letter-spacing: .10em;
+    width: 33rem;
+    animation: 
+    typing 3.5s steps(30, end),
+    blink-caret 1s step-end infinite;
+}
+
+/* The typing effect of h2 tag*/
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #804AF2 }
+  }
+
+.left-content p{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.left-content .button-section {
+  margin-top: 2rem;
+}
+
+.left-content .button-section .first-button{
+    color: #FAF6F6;
+    border-radius: .3rem;
+    background: linear-gradient(to right,  #0C9BAE, #804AF2);;
+    padding: .6rem 1.2rem;
+    margin-right: 1.2rem;
+}
+
+.left-content .button-section .second-button{
+    margin-left: 1.3rem;
+    color: var(--paragraph);
+    padding: .4rem 1.5rem;
+    border-radius: .4rem;
+    border: 3px solid;
+    border-image-slice: 1;
+    border-width: 3px;
+}
+
+.left-content .button-section .gradient{
+    border-image-source: linear-gradient(to right, #0C9BAE, #804AF2);
+}
+
+.right-content{
+    width: 50%;
+}
+
+.right-content img{
+    width: 37rem;
+    height: 29rem;
+    -webkit-filter: drop-shadow(.6rem .6rem .7rem #333);
+}
+
+/* -----------------second main content -----------
+-------------*/
+
+.second-main-content{
+    width: 90%;
+    margin: 4rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.second-left-content{
+    width: 60%;
+    margin-left: 0;
+}
+
+.second-left-content img{
+    width: 37rem;
+    height: 30rem;
+    -webkit-filter: drop-shadow(-.6rem .6rem .7rem #333);
+}
+
+.second-right-content{
+    width: 40%;
+
+}
+
+.second-right-content h3{
+    font-size: 3rem;
+    font-weight: 500;
+    padding-right: 7rem;
+}
+
+.second-right-content p{
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.second-right-content .download-button{
+    width: 9.5rem;
+    border-radius: .3rem;
+    background: linear-gradient(to right,  #0C9BAE, #804AF2);
+    padding: .6rem 1.3rem;
+    margin-right: 1.2rem;
+}
+
+.second-right-content .download-button a{
+    color: #FAF6F6;
+}
+
+/* --------------skill section-----------
+------- */
+
+.skill-section{
+    width: 100%;
+    margin: 4rem 0;
+    padding: 0 3rem;
+}
+
+.skill-section .head-details{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.skill-section .head-details h3{
+    font-size: 2.9rem;
+    font-weight: 600;
+    margin: 1.5rem 0;
+}
+
+.skill-section .head-details p{
+    width: 50%;
+    text-align: center;
+}
+
+.skill-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-details .skills{
+    width: 18rem;
+    height: 19rem;
+    margin: 0 3rem;
+    padding: 3rem 0;
+    text-align: center;
+    border-radius: .3rem;
+    box-shadow: -.7rem .7rem .8rem #5A5858;
+}
+
+.skill-details .skills h5{
+    padding: 1.6rem 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--heading);
+}
+
+..skill-details .skills p{
+    font-size: .5rem;
+}
+
+
+/* -----------footer section-----------
+------------- */
+
+.footer-section{
+    width: 100%;
+    display: flex;
+}
+
+.footer-section .link1-detail{
+    display: flex;
+    align-items: center;
+    width: 33.33%;
+    height: 12rem;
+    background-color: #3B5998;
+}
+
+.footer-section .link2-detail{
+    display: flex;
+    align-items: center;
+    width: 33.33%;
+    height: 12rem;
+    background-color: #00ACEE;
+}
+
+.footer-section .link3-detail{
+    display: flex;
+    align-items: center;
+    width: 33.33%;
+    height: 12rem;
+    background-color: #0E76A8;
+}
+
+.social-icon-box img{
+    width: 6rem;
+    height: 5rem;
+    border-radius: 1rem;
+    margin: 0 2rem;
+}
+
+.footer-section .icon-detail h5{
+    color: #FAF6F6;
+    font-size: 1.2rem;
+}
+
+.footer-section .icon-detail p{
+    color: #FAF6F6;
+    font-size: 1.2rem;
+}
+
+.last-footer-section{
+    width: 100%;
+    text-align: center;
+    margin-top: 6rem;
+}
+
+.last-footer-section a img{
+    margin: 2rem 0;
+}
+
+.last-footer-section h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.last-footer-section .follow-icons a img{
+    padding: 0 1.5rem;
+}
