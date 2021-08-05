@@ -228,7 +228,7 @@ label{
 
     span{
         font-size: 0.75rem;
-        color: #cfcfcf;
+        color: #a5a5a5;
         text-transform: uppercase;
     }
 }
@@ -243,38 +243,42 @@ input{
     text-align: center;
 }
 
-.forget-pass{
+.forget-pass {
     margin-top: 0.9375rem;
     text-align: center;
     font-size: 0.75rem;
-    color: #808080;
+
+    a{
+        color: #47b1e2;
+    }
 }
+
 
 .submit{
     margin-top: 2.5rem;
     margin-bottom: 1.25rem;
-    background: #d4af7a;
+    background: #ddad69;
     text-transform: uppercase;
 }
 
 .fb-btn{
     border: 2px solid #d3dae9;
-    color: darken(#d3dae9, 20%);
+    color: darken(#e8edfa, 20%);
 
     span{
         font-weight: bold;
-        color: darken(#1858ce, 20%);
+        color: darken(#5f90eb, 20%);
     }
 }
 
 .gl-btn{
     border: 2px solid #d3dae9;
-    color: darken(#d3dae9, 20%);
+    color: darken(#fceceb, 20%);
     margin-top: .5rem;
 
     span{
         font-weight: bold;
-        color: darken(#DB4437, 20%);
+        color: darken(#ec8177, 20%);
     }
 }
 
